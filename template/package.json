@@ -83,6 +83,13 @@
     "element-theme-default": "^1.0.2",
     "element-ui": "^1.0.2",
     {{/element}}
+    {{#pug}}
+    "pug": "^2.0.0-beta6",
+    {{/pug}}
+    {{#sass}}
+    "node-sass": "^3.13.0",
+    "sass-loader": "^4.0.2",
+    {{/sass}}
     "semver": "^5.3.0",
     "opn": "^4.0.2",
     "ora": "^0.3.0",

@@ -41,6 +41,8 @@ module.exports = {
     }],
     {{/if_eq}}
     // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0
+    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
+    // warn about unused variables, rather than erroring
+    'no-unused-vars': 1
   }
 }

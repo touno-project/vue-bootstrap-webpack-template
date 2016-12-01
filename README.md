@@ -7,25 +7,37 @@
 [Sass](http://sass-lang.com/) +
 [Yarn](https://yarnpkg.com/)
 
+This gives you 4 additional
+[vue-cli](https://github.com/vuejs/vue-cli) options:
 ![](docs/4-new-terminal-options.png)
 
 > A full-featured Webpack setup with hot-reload, lint-on-save, unit testing & css extraction.
 
-> This template is Vue 2.0 compatible. For Vue 1.x use this command: `vue init webpack#1.0 my-project`
+> This template is Vue 2.0 compatible. For Vue 1.x use this command: `vue init JauntyTech/vue-webpack-boilerplate#1.0 my-project` (However, I'm not testing this fork with Vue 1.x, so use at your own risk.)
 
 ## Why use Vuex, Element, Pug, Sass, and/or Yarn?
 
 These tools make Vue app development easier:
 
-- [Vuex](https://vuex.vuejs.org) manages complex app state in an amazingly simple way
-- [Element](http://element.eleme.io/) provides useful and good-looking UI components
-- [Pug](https://pugjs.org/) makes template tags more readable
-- [Sass](http://sass-lang.com/) makes style tags more readable
-- [Yarn](https://yarnpkg.com/) prevents a lot of versioning problems
+- **[Vuex](https://vuex.vuejs.org) manages complex app state in an amazingly simple way**
+  - This template includes... Vuex dependencies and a "Hello world" Vuex store
+  - So you can immediately... dispatch actions and commit mutations
+- **[Element](http://element.eleme.io/) provides useful and good-looking UI components**
+  - This template includes... Element dependencies and the default Element theme files
+  - So you can immediately... use Element components like `<el-date-picker>`
+- **[Pug](https://pugjs.org/) makes template tags more readable**
+  - This template includes... Pug dependencies
+  - So you can immediately... use Pug in Vue component template tags with `<template lang="pug">`
+- **[Sass](http://sass-lang.com/) makes style tags more readable**
+  - This template includes... Sass dependencies
+  - So you can immediately... use Sass in Vue component style tags with `<style lang="sass">`
+- **[Yarn](https://yarnpkg.com/) prevents a lot of versioning problems**
+  - This template includes... instructions for how to use `yarn` instead of `npm install`
+  - So you can immediately... lock down your project dependencies with specific version numbers
 
 ## Documentation
 
-- [For this template](http://vuejs-templates.github.io/webpack): common questions specific to this template are answered and each part is described in greater detail
+- [For Vue's official webpack template](http://vuejs-templates.github.io/webpack): common questions specific to this template are answered and each part is described in greater detail
 - [For Vue 2.0](http://vuejs.org/guide/): general information about how to work with Vue, not specific to this template
 
 ## Usage
@@ -74,5 +86,5 @@ $ npm run dev
 You can fork this repo to create your own boilerplate, and use it with `vue-cli`:
 
 ``` bash
-vue init username/repo my-project
+vue init GitHubUsername/repo my-project
 ```

@@ -28,6 +28,11 @@ npm run e2e
 # run all tests
 npm test
 {{/if_or}}
+{{#element}}
+
+# regenerate Element component styles in theme/ from element-variables.css
+npm run theme
+{{/element}}
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

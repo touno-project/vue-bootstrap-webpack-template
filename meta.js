@@ -94,6 +94,7 @@ module.exports = {
   "filters": {
     ".eslintrc.js": "lint",
     ".eslintignore": "lint",
+    ".gitattributes": "element",
     "config/test.env.js": "unit || e2e",
     "element-variables.css": "element",
     "test/unit/**/*": "unit",

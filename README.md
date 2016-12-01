@@ -19,11 +19,21 @@ This gives you 4 additional
 
 These tools make Vue app development easier:
 
-- [Vuex](https://vuex.vuejs.org) manages complex app state in an amazingly simple way
-- [Element](http://element.eleme.io/) provides useful and good-looking UI components
-- [Pug](https://pugjs.org/) makes template tags more readable
-- [Sass](http://sass-lang.com/) makes style tags more readable
-- [Yarn](https://yarnpkg.com/) prevents a lot of versioning problems
+- **[Vuex](https://vuex.vuejs.org) manages complex app state in an amazingly simple way**
+  - This template includes... Vuex dependencies and a "Hello world" Vuex store
+  - So you can immediately... dispatch actions and commit mutations
+- **[Element](http://element.eleme.io/) provides useful and good-looking UI components**
+  - This template includes... Element dependencies and the default Element theme files
+  - So you can immediately... use Element components like `<el-date-picker>`
+- **[Pug](https://pugjs.org/) makes template tags more readable**
+  - This template includes... Pug dependencies
+  - So you can immediately... use Pug in Vue component template tags with `<template lang="pug">`
+- **[Sass](http://sass-lang.com/) makes style tags more readable**
+  - This template includes... Sass dependencies
+  - So you can immediately... use Sass in Vue component style tags with `<style lang="sass">`
+- **[Yarn](https://yarnpkg.com/) prevents a lot of versioning problems**
+  - This template includes... instructions for how to use `yarn` instead of `npm install`
+  - So you can immediately... lock down your project dependencies with specific version numbers
 
 ## Documentation
 

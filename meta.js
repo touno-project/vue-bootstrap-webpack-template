@@ -85,6 +85,10 @@ module.exports = {
     "sass": {
       "type": "confirm",
       "message": "Enable Sass to pre-process Vue component styles?"
+    },
+    "vuex": {
+      "type": "confirm",
+      "message": "Use Vuex to manage application state?"
     }
   },
   "filters": {

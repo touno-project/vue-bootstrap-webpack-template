@@ -10,7 +10,8 @@
     "unit": "karma start test/unit/karma.conf.js --single-run"{{/unit}}{{#e2e}},
     "e2e": "node test/e2e/runner.js"{{/e2e}}{{#if_or unit e2e}},
     "test": "{{#unit}}npm run unit{{/unit}}{{#unit}}{{#e2e}} && {{/e2e}}{{/unit}}{{#e2e}}npm run e2e{{/e2e}}"{{/if_or}}{{#lint}},
-    "lint": "eslint --ext .js,.vue src{{#unit}} test/unit/specs{{/unit}}{{#e2e}} test/e2e/specs{{/e2e}}"{{/lint}}
+    "lint": "eslint --ext .js,.vue src{{#unit}} test/unit/specs{{/unit}}{{#e2e}} test/e2e/specs{{/e2e}}"{{/lint}}{{#element}},
+    "theme": "et"{{/element}}
   },
   "dependencies": {
     "vue": "^2.1.0"
@@ -77,6 +78,11 @@
     "nightwatch": "^0.9.8",
     "selenium-server": "2.53.1",
     {{/e2e}}
+    {{#element}}
+    "element-theme": "^0.2.0",
+    "element-theme-default": "^1.0.2",
+    "element-ui": "^1.0.2",
+    {{/element}}
     "semver": "^5.3.0",
     "opn": "^4.0.2",
     "ora": "^0.3.0",

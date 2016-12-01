@@ -73,6 +73,10 @@ module.exports = {
     "e2e": {
       "type": "confirm",
       "message": "Setup e2e tests with Nightwatch?"
+    },
+    "element": {
+      "type": "confirm",
+      "message": "Use the Element library of UI components?"
     }
   },
   "filters": {
@@ -80,7 +84,8 @@ module.exports = {
     ".eslintignore": "lint",
     "config/test.env.js": "unit || e2e",
     "test/unit/**/*": "unit",
-    "test/e2e/**/*": "e2e"
+    "test/e2e/**/*": "e2e",
+    "theme/**/*": "element"
   },
   "completeMessage": "To get started:\n\n  cd {{destDirName}}\n  npm install\n  npm run dev\n\nDocumentation can be found at https://vuejs-templates.github.io/webpack"
 };

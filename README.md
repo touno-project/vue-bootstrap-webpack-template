@@ -1,8 +1,27 @@
 # vue-webpack-boilerplate
 
+[Vue's official webpack boilerplate](https://github.com/vuejs-templates/webpack) +
+[Vuex](https://vuex.vuejs.org) +
+[Element](http://element.eleme.io/) +
+[Pug](https://pugjs.org/) +
+[Sass](http://sass-lang.com/) +
+[Yarn](https://yarnpkg.com/)
+
+![](docs/4-new-terminal-options.png)
+
 > A full-featured Webpack setup with hot-reload, lint-on-save, unit testing & css extraction.
 
 > This template is Vue 2.0 compatible. For Vue 1.x use this command: `vue init webpack#1.0 my-project`
+
+## Why use Vuex, Element, Pug, Sass, and/or Yarn?
+
+These tools make Vue app development easier:
+
+- [Vuex](https://vuex.vuejs.org) manages complex app state in an amazingly simple way
+- [Element](http://element.eleme.io/) provides useful and good-looking UI components
+- [Pug](https://pugjs.org/) makes template tags more readable
+- [Sass](http://sass-lang.com/) makes style tags more readable
+- [Yarn](https://yarnpkg.com/) prevents a lot of versioning problems
 
 ## Documentation
 
@@ -15,9 +34,9 @@ This is a project template for [vue-cli](https://github.com/vuejs/vue-cli). **It
 
 ``` bash
 $ npm install -g vue-cli
-$ vue init webpack my-project
+$ vue init JauntyTech/vue-webpack-boilerplate my-project
 $ cd my-project
-$ npm install
+$ yarn
 $ npm run dev
 ```
 
@@ -46,6 +65,9 @@ $ npm run dev
   - Works with one command out of the box:
     - Selenium and chromedriver dependencies automatically handled.
     - Automatically spawns the Selenium server.
+
+- `npm run theme`: Regenerate Element component styles in `theme/` from `element-variables.css`
+  - See element-theme documentation: [here](http://element.eleme.io/#/en-US/component/custom-theme)
 
 ### Fork It And Make Your Own
 

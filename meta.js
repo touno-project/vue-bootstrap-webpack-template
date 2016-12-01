@@ -97,6 +97,7 @@ module.exports = {
     ".gitattributes": "element",
     "config/test.env.js": "unit || e2e",
     "element-variables.css": "element",
+    "src/api/**/*": "vuex",
     "test/unit/**/*": "unit",
     "test/e2e/**/*": "e2e",
     "theme/**/*": "element"

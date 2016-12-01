@@ -14,7 +14,8 @@
     "theme": "et"{{/element}}
   },
   "dependencies": {
-    "vue": "^2.1.0"
+    "vue": "^2.1.0"{{#vuex}},
+    "vuex": "^2.0.0"{{/vuex}}
   },
   "devDependencies": {
     "autoprefixer": "^6.4.0",

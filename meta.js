@@ -95,6 +95,7 @@ module.exports = {
     ".eslintrc.js": "lint",
     ".eslintignore": "lint",
     "config/test.env.js": "unit || e2e",
+    "element-variables.css": "element",
     "test/unit/**/*": "unit",
     "test/e2e/**/*": "e2e",
     "theme/**/*": "element"

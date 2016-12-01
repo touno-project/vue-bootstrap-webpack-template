@@ -73,6 +73,10 @@ module.exports = {
     "e2e": {
       "type": "confirm",
       "message": "Setup e2e tests with Nightwatch?"
+    },
+    "element": {
+      "type": "confirm",
+      "message": "Use the Element library of UI components?"
     }
   },
   "filters": {

@@ -9,9 +9,14 @@ import locale from 'element-ui/lib/locale/lang/en'{{#if_eq lintConfig "airbnb"}}
 import '../theme/index.css'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/element}}
 import App from './App'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+{{#router}}
+import router from './router'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+{{/router}}
 {{#vuex}}
 import store from './store'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/vuex}}
+
+Vue.config.productionTip = false{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
 {{#element}}
 Vue.use(ElementUI, { locale }){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
@@ -20,6 +25,9 @@ Vue.use(ElementUI, { locale }){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  {{#router}}
+  router,
+  {{/router}}
   {{#vuex}}
   store,
   {{/vuex}}

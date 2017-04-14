@@ -109,5 +109,5 @@ module.exports = {
     "test/e2e/**/*": "e2e",
     "theme/**/*": "element"
   },
-  "completeMessage": "To get started:\n\n  {{^inPlace}}cd {{destDirName}}\n  {{/inPlace}}npm install\n  npm run dev\n\nDocumentation can be found at https://vuejs-templates.github.io/webpack"
+  "completeMessage": "To get started:\n\n  {{^inPlace}}cd {{destDirName}}\n  {{/inPlace}}yarn\n  npm run dev\n\nDocumentation can be found at https://vuejs-templates.github.io/webpack"
 };

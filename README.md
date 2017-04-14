@@ -1,6 +1,6 @@
-# vue-webpack-boilerplate-plus
+# vue-webpack-template-plus
 
-[Vue's official webpack boilerplate](https://github.com/vuejs-templates/webpack) +
+[Vue's official webpack template](https://github.com/vuejs-templates/webpack) +
 [Vuex](https://vuex.vuejs.org) +
 [Element](http://element.eleme.io/) +
 [Pug](https://pugjs.org/) +
@@ -13,7 +13,7 @@ This gives you 4 additional
 
 > A full-featured Webpack setup with hot-reload, lint-on-save, unit testing & css extraction.
 
-> This template is Vue 2.0 compatible. For Vue 1.x you can try this command: `vue init JauntyTech/vue-webpack-boilerplate-plus#1.0 my-project` (However, I'm not testing this fork with Vue 1.x, so use at your own risk.)
+> This template is Vue 2.0 compatible. For Vue 1.x you can try this command: `vue init JauntyTech/vue-webpack-template-plus#1.0 my-project` (However, I'm not testing this fork with Vue 1.x, so use at your own risk.)
 
 ## Why use Vuex, Element, Pug, Sass, and/or Yarn?
 
@@ -46,7 +46,7 @@ This is a project template for [vue-cli](https://github.com/vuejs/vue-cli). **It
 
 ``` bash
 $ npm install -g vue-cli
-$ vue init JauntyTech/vue-webpack-boilerplate-plus my-project
+$ vue init JauntyTech/vue-webpack-template-plus my-project
 $ cd my-project
 $ yarn
 $ npm run dev

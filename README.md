@@ -35,6 +35,13 @@ These tools make Vue app development easier:
   - This template includes... instructions for how to use `yarn` instead of `npm install`
   - So you can immediately... lock down your project dependencies with specific version numbers
 
+## Projects that used this template
+
+If you used this template, let me know! (or start a PR yourself to add to this list)
+
+- [JanCVanB/jancvb.com](https://github.com/JanCVanB/jancvb.com)
+- [JauntyTech/vue-friend](https://github.com/JauntyTech/vue-friend)
+
 ## Documentation
 
 - [For Vue's official webpack template](http://vuejs-templates.github.io/webpack): common questions specific to this template are answered and each part is described in greater detail

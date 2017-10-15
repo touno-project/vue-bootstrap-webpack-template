@@ -86,7 +86,7 @@
     "selenium-server": "^3.0.1",
     {{/e2e}}
     {{#element}}
-    "element-theme": "^0.2.0",
+    "element-theme": "^0.7.2",
     "element-theme-default": "^1.0.2",
     "element-ui": "^1.0.2",
     {{/element}}

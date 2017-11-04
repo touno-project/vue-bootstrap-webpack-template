@@ -9,6 +9,7 @@
 
 This gives you 4 additional
 [vue-cli](https://github.com/vuejs/vue-cli) options:
+
 ![](docs/4-new-terminal-options.png)
 
 > A full-featured Webpack setup with hot-reload, lint-on-save, unit testing & css extraction.

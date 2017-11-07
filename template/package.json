@@ -11,13 +11,15 @@
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run"{{/unit}}{{#e2e}},
     "e2e": "node test/e2e/runner.js"{{/e2e}}{{#if_or unit e2e}},
     "test": "{{#unit}}npm run unit{{/unit}}{{#unit}}{{#e2e}} && {{/e2e}}{{/unit}}{{#e2e}}npm run e2e{{/e2e}}"{{/if_or}}{{#lint}},
-    "lint": "eslint --ext .js,.vue src{{#unit}} test/unit/specs{{/unit}}{{#e2e}} test/e2e/specs{{/e2e}}"{{/lint}}{{#element}},
-    "theme": "et"{{/element}}
+    "lint": "eslint --ext .js,.vue src{{#unit}} test/unit/specs{{/unit}}{{#e2e}} test/e2e/specs{{/e2e}}"{{/lint}}
   },
   "dependencies": {
     "vue": "^2.5.2"{{#router}},
     "vue-router": "^3.0.1"{{/router}}{{#vuex}},
-    "vuex": "^2.5.0"{{/vuex}}
+    "vuex": "^2.5.0"{{/vuex}}{{#bootstrap}},
+    "bootstrap": "^4.0.0-beta.2",
+    "bootstrap-vue": "^1.0.0-beta.9",
+    "popper.js": "^1.12.6"{{/bootstrap}}
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -85,11 +87,6 @@
     "nightwatch": "^0.9.12",
     "selenium-server": "^3.0.1",
     {{/e2e}}
-    {{#element}}
-    "element-theme": "^0.7.2",
-    "element-theme-default": "^1.0.2",
-    "element-ui": "^1.0.2",
-    {{/element}}
     {{#pug}}
     "pug": "^2.0.0-beta6",
     {{/pug}}

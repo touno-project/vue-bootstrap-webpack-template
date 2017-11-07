@@ -3,11 +3,11 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 {{/if_eq}}
 import Vue from 'vue'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
-{{#element}}
-import ElementUI from 'element-ui'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
-import locale from 'element-ui/lib/locale/lang/en'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
-import '../theme/index.css'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
-{{/element}}
+{{#bootstrap}}
+import BootstrapVue from 'bootstrap-vue'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+import 'bootstrap/dist/css/bootstrap.min.css'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+import 'bootstrap-vue/dist/bootstrap-vue.css'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+{{/bootstrap}}
 import App from './App'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{#router}}
 import router from './router'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
@@ -18,10 +18,10 @@ import store from './store'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
 Vue.config.productionTip = false{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
-{{#element}}
-Vue.use(ElementUI, { locale }){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+{{#bootstrap}}
+Vue.use(BootstrapVue){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
-{{/element}}
+{{/bootstrap}}
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

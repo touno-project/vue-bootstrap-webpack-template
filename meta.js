@@ -78,13 +78,9 @@ module.exports = {
       "type": "confirm",
       "message": "Setup e2e tests with Nightwatch?"
     },
-    "element": {
+    "bootstrap": {
       "type": "confirm",
-      "message": "Use the Element library of UI components?"
-    },
-    "pug": {
-      "type": "confirm",
-      "message": "Enable Pug to pre-process Vue component templates?"
+      "message": "Use the Vue-Bootstrap@4 library of UI components?"
     },
     "sass": {
       "type": "confirm",
@@ -98,16 +94,13 @@ module.exports = {
   "filters": {
     ".eslintrc.js": "lint",
     ".eslintignore": "lint",
-    ".gitattributes": "element",
     "build/webpack.test.conf.js": "unit",
     "config/test.env.js": "unit || e2e",
-    "element-variables.css": "element",
     "src/api/**/*": "vuex",
     "src/router/**/*": "router",
     "src/store/**/*": "vuex",
     "test/unit/**/*": "unit",
-    "test/e2e/**/*": "e2e",
-    "theme/**/*": "element"
+    "test/e2e/**/*": "e2e"
   },
   "completeMessage": "To get started:\n\n  {{^inPlace}}cd {{destDirName}}\n  {{/inPlace}}yarn\n  npm run dev\n\nDocumentation can be found at https://vuejs-templates.github.io/webpack"
 };
